@@ -1,0 +1,132 @@
+.sony__bar {
+  background-color: var(--black);
+  color: var(--white);
+  text-align: right;
+  padding: 4px 15px;
+  font-weight: 600;
+}
+
+.container__navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--white);
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+}
+
+.container__navigation {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1.5rem;
+  color: var(--darkgrey);
+}
+
+.container__username {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.username {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.container__search {
+  position: relative;
+}
+
+.search {
+  border: none;
+  background-color: var(--nearwhite);
+  text-align: center;
+  border-radius: 1rem;
+  padding: 1rem 0.2rem;
+  max-width: 216px;
+}
+
+.search::placeholder {
+  font-size: 1.6rem;
+  color: var(--darkgrey);
+  border: none;
+}
+
+.container__responsive {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  padding: 0;
+  position: absolute;
+  right: -40%;
+  top: 81px;
+  list-style: none;
+  background-color: var(--white);
+  width: 40%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 10;
+  transition: transform 600ms ease-in-out;
+}
+
+.link {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.hamburguer {
+  cursor: pointer;
+  z-index: 100;
+}
+
+.showMenu {
+  transform: translate(-100%);
+  top: 81px;
+
+  transition: transform 600ms ease-in-out;
+}
+
+/* 
+
+.container__responsive {
+  
+  position: absolute;
+  right: -40%;
+  top:81px;
+  list-style: none;
+  background-color: var(--white);
+  width: 40%;
+  height: 100vh;
+  overflow: hidden;
+  z-index: 10;
+  transition: transform 6000ms ease-in-out;
+  
+}
+
+.link {
+  text-decoration: none;
+  color: var(--black);
+}
+
+.hamburguer {
+  cursor: pointer;
+  z-index: 100;
+}
+
+.showMenu {
+ 
+  transform: translate(-100%);
+  top: 81px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+  padding: 0;
+  transition: transform 6000ms ease-in-out;
+} */

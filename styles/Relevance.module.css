@@ -1,0 +1,12 @@
+.card__container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  gap: 3rem;
+}
+
+@media (max-width:768px) {
+  .card__container {
+    grid-template-columns: .5fr;
+  }
+}

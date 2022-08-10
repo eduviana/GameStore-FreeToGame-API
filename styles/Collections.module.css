@@ -1,0 +1,69 @@
+.card__container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: auto;
+  gap: 3rem;
+}
+
+.card {
+  /* flex: 0 1 120px; */
+  transition: margin 400ms ease;
+  background-repeat: no-repeat;
+  height: 180px;
+  background-size: 100% 100%;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+
+.card:first-child {
+  background-image: url(../public/collections/indieswebp.webp);
+  grid-column: 1 / -1;
+  /* flex: 0 1 300px; */
+  height: 260px;
+}
+
+.card:nth-child(2) {
+  background-image: url(../public/collections/EditorsChoice.png);
+}
+
+.card:nth-child(3) {
+  background-image: url(../public/collections/Essentials.png);
+}
+
+.card:nth-child(4) {
+  background-image: url(../public/collections/PS\ VR.png);
+}
+
+.card:nth-child(5) {
+  background-image: url(../public/collections/Super\ Heroes.png);
+}
+
+.card:hover {
+  margin: -6px;
+}
+
+@media (max-width:1024px) {
+  .card__container {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+  }
+
+  .card:first-child {
+    grid-column: 1 / 3;
+  }
+  
+
+
+}
+
+
+@media (max-width:425px) {
+  .card__container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    
+  }
+
+
+}

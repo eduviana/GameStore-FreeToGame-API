@@ -1,0 +1,40 @@
+.footer {
+  background-color: var(--footer);
+  margin-top: 10rem;
+  padding-top: 4rem;
+}
+
+.logo {
+  width: 50px;
+  margin: 0 auto;
+  margin-bottom: 4rem;
+}
+
+.info__container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  justify-items: center;
+}
+
+.info,
+.social__container,
+.copy {
+  color: var(--white);
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+.info, .social__container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 0 2rem;
+}
+
+.info a,
+.social__container a {
+  text-decoration: none;
+  color: var(--white);
+}

@@ -1,0 +1,21 @@
+.card {
+  border-radius: 1.5rem;
+  transition: border 200ms ease;
+  position: relative;
+  overflow: hidden;
+  
+}
+.card:hover{
+  cursor: pointer;
+  border: 1px solid;
+  border-image: linear-gradient(45deg, purple, orange) 1;
+}
+
+
+
+.name {
+  text-decoration: none;
+  color: var(--white);
+  line-height: 140px;
+  position: absolute;
+}

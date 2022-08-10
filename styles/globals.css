@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+:root {
+  --darkgrey: #383838;
+  --white: #ffffff;
+  --black: #000000;
+  --gray: #c4c4c4;
+  --playstationblue: #0072ce;
+  --lightgray: #e4e4e4;
+  --nearwhite: #f8f8f8;
+  --eaplay: #ff4747;
+  --psdark: #b98029;
+  --pswhite: #fdd635;
+  --capcomyellow: #ffcb08;
+  --capcomblue: #0c4da2;
+  --footer: #065baa;
+  --darkbg: #1f1f1f;
+  --fuente-principal: "Open Sans", serif;
+  --border-color: #4e4b4bbd;
+  --padding: 40px 160px;
+  --box-shadow: 0px 0px 15px #0072ce;
+  --title: 2.5rem;
+  --banner-margin: 60px 0;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  font-size: 2rem;
+  font-family: var(--fuente-principal);
+  line-height: 1.5;
+  background-color: var(--darkbg);
+}
+
+@media (max-width:1024px) {
+  body {
+    font-size: 1.8rem;
+
+  }
+}
+
+/* -------------HOME--------------- */
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 8px 1px;
+  overflow: hidden;
+}
+
+.card__container--wrap2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 10rem), 224px));
+  justify-content: center;
+  grid-gap: 3rem;
+  gap: 3rem;
+}
+
+.grid__container {
+  display: grid;
+  gap: 1rem;
+  grid-template:
+    "picture   picture    picture   information" auto
+    "features   features  features  information" auto /
+    25% 25% 25% 25%;
+}
+
+.picture {
+  grid-area: picture;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 1.7rem;
+  padding: 6rem 0;
+}
+
+.information {
+  grid-area: information;
+}
+
+.features {
+  grid-area: features;
+  /* background-color: #afd6af; */
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 86%;
+  }
+}
+
+
+/* ------------EXPLORE------------- */
+
+.results__filters--container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 6rem;
+}
+
+.cards__container--explore {
+  width: 100%;
+  padding: 8px 1px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 92%;
+  }
+  .results__filters--container {
+    gap: 2rem;
+  }
+
+  .cards__container--explore {
+    width: 70%;
+    padding: 8px 1px;
+  }
+
+  .grid__container {
+    display: grid;
+    gap: 6rem;
+    grid-template:
+      "picture" auto
+      "features" auto
+      "information" auto /
+      100%;
+  }
+
+  
+  
+}
+

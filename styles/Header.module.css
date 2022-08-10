@@ -1,0 +1,79 @@
+.background {
+  background-image: url(../public/spiderman-desktop.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.container__hero {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: flex-end;
+}
+
+.container__pages {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pages {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.page,
+.page__active {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.page {
+  color: var(--gray);
+}
+
+.page__active {
+  color: var(--white);
+}
+
+.page:hover {
+  cursor: pointer;
+}
+
+.container__specialGame {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10rem;
+}
+
+.container__image {
+  width: 30rem;
+}
+
+.price {
+  background-color: var(--playstationblue);
+  border-radius: 0.5rem;
+  border: none;
+  box-shadow: var(--box-shadow);
+  color: var(--white);
+  font-size: 2.5rem;
+  font-weight: 600;
+  padding: 0.8rem 2rem;
+  text-align: center;
+}
+
+
+@media (max-width:768px) {
+  .background {
+    background-size: 100% 100%;
+  }
+
+
+  .container__hero {
+   
+    height: 140vh;
+  }
+}

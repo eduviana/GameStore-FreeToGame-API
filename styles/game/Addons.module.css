@@ -1,0 +1,95 @@
+.container__addons {
+  width: 78%;
+  margin-top: 2rem;
+}
+
+.card__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 2rem;
+  align-items: center;
+}
+
+
+.cardgame {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 350px;
+  height: 400px;
+  border: 0.5px solid var(--border-color);
+  border-radius: 1.5rem;
+  overflow: hidden;
+  transition: scale 200ms;
+}
+
+.cardgame:hover {
+  opacity: 0.9;
+  cursor: pointer;
+  transform: scale(1.01);
+}
+
+.header {
+  background-repeat: no-repeat;
+  height: 410px;
+  background-size: 100% 100%;
+  border-radius: 0.5rem;
+  background-position: center;
+}
+
+.body {
+  padding: 0.5rem;
+}
+
+.title {
+  color: var(--white);
+  font-weight: 800;
+  font-size: 1.8rem;
+  margin: 0.5rem;
+}
+
+.publisher {
+  color: var(--gray);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0.5rem;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 1rem;
+}
+
+.container__platform__category {
+  display: flex;
+  gap: 1rem;
+}
+
+.platform {
+  width: max-content;
+  margin-bottom: 1rem;
+  border: 1.5px solid var(--border-color);
+  border-radius: 0.5rem;
+  color: var(--gray);
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+  color: var(--gray);
+  padding: 0.1rem 0.3rem;
+}
+
+.price {
+  background-color: var(--playstationblue);
+  width: 100%;
+  color: var(--white);
+  font-weight: 600;
+  font-size: 2rem;
+  text-align: center;
+  box-shadow: 0px 0px 15px #0072ce;
+  border-radius: 1rem;
+  border: none;
+  padding: 0.7rem;
+  cursor: pointer;
+}
+
