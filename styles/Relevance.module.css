@@ -7,6 +7,6 @@
 
 @media (max-width:768px) {
   .card__container {
-    grid-template-columns: .5fr;
+    grid-template-columns: 80%;
   }
 }
