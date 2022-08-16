@@ -15,7 +15,8 @@ const items = [
     layout="fixed"
     src={imagen5}
     onDragStart={handleDragStart}
-    role="presentation"
+    alt="ingame image"
+    key={1}
   />,
   <Image
     width={350}
@@ -23,7 +24,8 @@ const items = [
     layout="fixed"
     src={imagen5}
     onDragStart={handleDragStart}
-    role="presentation"
+    alt="ingame image"
+    key={2}
   />,
   <Image
     width={350}
@@ -31,7 +33,8 @@ const items = [
     layout="fixed"
     src={imagen5}
     onDragStart={handleDragStart}
-    role="presentation"
+    alt="ingame image"
+    key={3}
   />,
   <Image
     width={350}
@@ -39,7 +42,8 @@ const items = [
     layout="fixed"
     src={imagen5}
     onDragStart={handleDragStart}
-    role="presentation"
+    alt="ingame image"
+    key={4}
   />,
   <Image
     width={350}
@@ -47,13 +51,14 @@ const items = [
     layout="fixed"
     src={imagen5}
     onDragStart={handleDragStart}
-    role="presentation"
+    alt="ingame image"
+    key={5}
   />,
 ];
 
-const Gallery = ({ screenshots }) => {
+const Gallery = () => {
   
-  return <AliceCarousel autoWidth infinite mouseTracking items={items} disableButtonsControls={true}/>;
+  return <AliceCarousel autoWidth infinite mouseTracking items={items} key={items.id} disableButtonsControls={true}/>;
 };
 
 export default Gallery;

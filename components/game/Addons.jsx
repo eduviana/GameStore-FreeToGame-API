@@ -62,7 +62,8 @@ const Addons = ({ game }) => {
             {`
               .background {
                 background-image: url(${screenshots[2].image});
-                max-width: 100%;
+                background-size: cover;
+                
               }
             `}
           </style>

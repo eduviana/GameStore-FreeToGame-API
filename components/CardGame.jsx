@@ -20,8 +20,7 @@ const CardGame = ({ game }) => {
         width={200}
         height={180}
         src={thumbnail}
-        objectFit="cover"
-        objectPosition="center"
+        alt={`game ${title}`}
       />
       </div>
       <div className={styles.body}>

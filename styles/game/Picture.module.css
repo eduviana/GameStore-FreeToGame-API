@@ -1,22 +1,24 @@
 .title {
-    font-size: 2rem;
-    font-weight: 700;
-    color: var(--lightgray);
-    padding: 0 3rem;
-    width: 35%;
-  }
-  
-  .container__texts {
-    padding: 0 4rem 0 0.5rem;
-    width: 60%;
-    
-  }
-  
-  .text {
-    font-size: 1.5rem;
-    font-weight: 600;
-    text-align: justify;
-    line-height: 2.5rem;
-    color: var(--nearwhite);
-    
-  }
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--lightgray);
+  padding: 0 3rem;
+  width: 35%;
+}
+
+.container__texts {
+  padding: 0 4rem 0 0.5rem;
+  width: 60%;
+}
+
+.text {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 16;
+  overflow: hidden;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: justify;
+  line-height: 2.5rem;
+  color: var(--nearwhite);
+}

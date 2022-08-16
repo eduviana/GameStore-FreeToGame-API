@@ -2,7 +2,7 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import React from "react";
 import { randomPrice } from "../helpers/randomPrice";
-import styles from "../styles/CardRating.module.css";
+import styles from "../styles/CardRelevance.module.css";
 
 const CardRelevance = ({ game }) => {
   const router = useRouter();
@@ -22,7 +22,6 @@ const CardRelevance = ({ game }) => {
         height={200}
         alt="image most rating game"
       />
-      {/* <span className={styles.name}>{title}</span> */}
       <div className={styles.card}>
         <p suppressHydrationWarning className={styles.price}>${randomPrice()}</p>
         <button className={styles.addToCart}>Add to Cart</button>

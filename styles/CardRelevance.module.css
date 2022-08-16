@@ -3,12 +3,12 @@
   flex-direction: column;
   transition: transform 0.3s ease;
   position: relative;
+  filter: drop-shadow(0px 0px 1px var(--playstationblue));
+  background-color: rgba(0, 0, 0, .5);
 }
 
 .image {
   border-radius: 1.5rem;
-  opacity: .8;
-  
 }
 
 .name {
@@ -63,8 +63,7 @@
   background-color: #0f55ec;
 }
 
-
-@media (max-width:1024px) {
+@media (max-width: 1024px) {
   .name {
     font-size: 1.8rem;
   }

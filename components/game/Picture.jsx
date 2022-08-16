@@ -1,30 +1,25 @@
-
 import React from "react";
 import styles from "../../styles/game/Picture.module.css";
 
-
-const Picture = ({ description, short_description, screenshots}) => {
+const Picture = ({ description, short_description, screenshots }) => {
   return (
     <>
-     <style jsx>
+      <style jsx>
         {`
           .background {
-            background-image: url(${screenshots[1].image});
-            opacity: .8;
-            
-
+            background-image: linear-gradient(
+                to right,
+                rgb(0 0 0 / 0.30),
+                rgb(0 0 0 / 0.60)
+              ),
+              url(${screenshots[1].image});
           }
         `}
       </style>
       <div className="background picture">
-        <h3 className={styles.title}>
-          {short_description}
-        </h3>
+        <h3 className={styles.title}>{short_description}</h3>
         <div className={styles.container__texts}>
-          <p className={styles.text}>
-           {description}
-          </p>
-
+          <p className={styles.text}>{description}</p>
         </div>
       </div>
     </>
@@ -32,10 +27,3 @@ const Picture = ({ description, short_description, screenshots}) => {
 };
 
 export default Picture;
-
-
-
-
-
-
-

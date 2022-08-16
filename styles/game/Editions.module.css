@@ -18,14 +18,19 @@
 }
 
 .container__image {
-  width: 50%;
+  width: 30%;
+}
+
+.image {
+  border-radius: 2rem;
+  overflow: hidden;
 }
 
 .container__texts {
   color: var(--white);
   display: flex;
   flex-direction: column;
-  gap: 5rem;
+  gap: 4rem;
 }
 
 .container__platform__edition {
@@ -82,6 +87,7 @@
   .container__cards {
     gap: 7rem;
     align-items: center;
+    
   }
 
   .card {

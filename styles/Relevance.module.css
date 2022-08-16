@@ -7,6 +7,12 @@
 
 @media (max-width:768px) {
   .card__container {
-    grid-template-columns: 80%;
+    grid-template-columns: 70%;
+  }
+}
+
+@media (max-width:425px) {
+  .card__container {
+    grid-template-columns: 90%;
   }
 }

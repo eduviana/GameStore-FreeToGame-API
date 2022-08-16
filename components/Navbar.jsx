@@ -38,6 +38,7 @@ const Navbar = () => {
           className={styles.logo}
           width={200}
           height={43}
+          alt="website logo"
         />
         {width <= 768 ? (
           <>

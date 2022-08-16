@@ -18,7 +18,7 @@
   --fuente-principal: "Open Sans", serif;
   --border-color: #4e4b4bbd;
   --padding: 40px 160px;
-  --box-shadow: 0px 0px 15px #0072ce;
+  --box-shadow: 0px -4px 15px #0072ce;
   --title: 2.5rem;
   --banner-margin: 60px 0;
 }
@@ -57,7 +57,7 @@ body {
 .card__container--wrap2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 10rem), 250px));
-  justify-content: center;
+  justify-content: space-evenly;
   grid-gap: 3rem;
   gap: 3rem;
 }
@@ -96,6 +96,11 @@ body {
   .container {
     width: 86%;
   }
+
+  .card__container--wrap2 {
+    justify-content: center;
+    
+  }
 }
 
 
@@ -116,6 +121,9 @@ body {
   .container {
     width: 92%;
   }
+
+  
+
   .results__filters--container {
     gap: 2rem;
   }

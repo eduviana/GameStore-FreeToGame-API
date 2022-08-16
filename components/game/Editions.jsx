@@ -22,7 +22,8 @@ const Editions = ({ game }) => {
               layout="responsive"
               src={thumbnail}
               alt="image game"
-              objectFit="fill"
+              className={styles.image}
+              
             />
           </div>
           <div className={styles.container__texts}>
@@ -50,7 +51,7 @@ const Editions = ({ game }) => {
               layout="responsive"
               src={thumbnail}
               alt="image game"
-              objectFit="fill"
+              className={styles.image}
             />
           </div>
           <div className={styles.container__texts}>
