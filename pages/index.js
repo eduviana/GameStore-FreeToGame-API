@@ -6,6 +6,7 @@ import LatestRelease from "../components/LatestRelease";
 import Rpg from "../components/Rpg";
 import Racing from "../components/Racing";
 import Genres from "../components/Genres";
+import Relevance from "../components/Relevance";
 
 export default function Home({
   gamesRelevance,
@@ -18,7 +19,8 @@ export default function Home({
   return (
     <>
       <Layout title="Inicio">
-        <Header gamesRelevance={gamesRelevance} />
+        <Header />
+        <Relevance gamesRelevance={gamesRelevance} />
         <Popularity gamesPopularity={gamesPopularity} />
         <Banner background={"/psnowadd.webp"} />
         <LatestRelease gamesLatestReleases={gamesLatestReleases} />

@@ -31,7 +31,7 @@
 
 .header {
   background-repeat: no-repeat;
-  height: 410px;
+  height: 26rem;
   background-size: 100% 100%;
   border-radius: 0.5rem;
   background-position: center;
@@ -91,5 +91,12 @@
   border: none;
   padding: 0.7rem;
   cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .container__addons {
+    width: 100%;
+    
+  }
 }
 

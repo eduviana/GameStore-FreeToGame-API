@@ -3,8 +3,6 @@
   flex-direction: column;
   transition: transform 0.3s ease;
   position: relative;
-  filter: drop-shadow(0px 0px 1px var(--playstationblue));
-  background-color: rgba(0, 0, 0, .5);
 }
 
 .image {

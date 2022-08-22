@@ -39,7 +39,8 @@ const Header = ({ game }) => {
         <div className="container">
           <div className={styles.container__infoGame__price}>
             <div className={styles.container__infogame}>
-              <Image
+            <div className={styles.portrait}>
+            <Image
                 layout="intrinsic"
                 width={200}
                 height={200}
@@ -47,6 +48,7 @@ const Header = ({ game }) => {
                 alt="thumbnail game"
                 className={styles.thumbnail}
               ></Image>
+            </div>
 
               <div className={styles.container__description}>
                 <h2 className={styles.title}>{title}</h2>

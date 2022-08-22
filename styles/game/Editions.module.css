@@ -18,7 +18,7 @@
 }
 
 .container__image {
-  width: 30%;
+  width: 80%;
 }
 
 .image {
@@ -80,8 +80,8 @@
 
 @media (max-width: 768px) {
   .container__editions {
-    width: 70%;
-    margin-top: 2rem;
+    width: 80%;
+    margin: 0 auto;
   }
 
   .container__cards {

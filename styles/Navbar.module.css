@@ -64,11 +64,11 @@
   gap: 4rem;
   padding: 0;
   position: absolute;
-  right: -40%;
+  right: -68%;
   top: 81px;
   list-style: none;
   background-color: var(--white);
-  width: 40%;
+  width: 68%;
   height: 100vh;
   overflow: hidden;
   z-index: 10;

@@ -6,16 +6,17 @@ import styles from "../styles/Relevance.module.css";
 const Relevance = ({ gamesRelevance }) => {
   const cutGamesTrending = gamesRelevance.slice(0, 3);
 
-
   return (
-    <>
+   
+      <div className="container">
       <Title sectionName="Relevance" />
-      <div className={styles.card__container}>
-        {cutGamesTrending.map((game) => (
-          <CardRelevance key={game.id} game={game} />
-        ))}
+        <div className={styles.card__container}>
+          {cutGamesTrending.map((game) => (
+            <CardRelevance key={game.id} game={game} />
+          ))}
+        </div>
       </div>
-    </>
+    
   );
 };
 
